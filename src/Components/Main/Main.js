@@ -57,10 +57,10 @@ const Main = () => {
             <div key={index} className="para">
               <p>{item}</p>
               <div className="btn-box">
-                <button onClick={() => navigator.clipboard.writeText(item)}>
+                <button title = "Copy" onClick={() => navigator.clipboard.writeText(item)}>
                   <i className="bx bx-copy"></i>
                 </button>
-                <button onClick={() => sharePara(item)}>
+                <button title = "Share" onClick={() => sharePara(item)}>
                   <i className="bx bx-share-alt"></i>
                 </button>
               </div>
